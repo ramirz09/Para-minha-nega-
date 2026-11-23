@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#fff0f5" name="theme-color"/>
+<meta content="Uma declaração feita com carinho, em uma madrugada especial." name="description"/>
+<title>Para minha nega ❤️</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div aria-hidden="true" class="floating-hearts" id="hearts"></div>
+<header class="hero">
+<div class="hero-inner">
+<div class="eyebrow">uma cartinha feita de coração</div>
+<div class="heart-mark">♡</div>
+<h1>Para minha<br/>nega</h1>
+<p>Tem coisas que a gente sente tanto que acaba precisando escrever. Essa aqui é uma delas.</p>
+<button class="open-btn" onclick="document.getElementById('nossas-fotos').scrollIntoView({behavior:'smooth'})">Abrir minha cartinha ♥</button>
+<div class="hint">Feita com carinho, especialmente para você</div>
+</div>
+</header>
+<main>
+<section id="nossas-fotos">
+<div class="section-wrap">
+<h2 class="section-title reveal">Nossos pedacinhos</h2>
+<p class="section-subtitle reveal">Algumas lembranças que merecem ficar guardadas. Clique em uma foto para vê-la maior.</p>
+<div class="gallery" id="gallery"></div>
+</div>
+</section>
+<section class="letter-section" id="carta">
+<div class="section-wrap">
+<h2 class="section-title reveal">Um monte de coisas que eu queria te dizer</h2>
+<p class="section-subtitle reveal">Lê com calma, nega. Essa carta é todinha sua. 💗</p>
+<article class="letter reveal" id="letter"></article>
+</div>
+</section>
+<section class="ending">
+<div class="big-heart">♡</div>
+<h2>Boa noite, minha menina.</h2>
+<p>Que Deus cuide de nós, dos nossos sentimentos e dos nossos caminhos. E que ainda venham muitas lembranças bonitas para guardar.</p>
+<div class="heart-mark">♡</div>
+</section>
+</main>
+<footer>Feito com carinho, para uma pessoa muito especial. ❤️</footer>
+<div aria-label="Foto ampliada" aria-modal="true" class="modal" id="photoModal" onclick="closePhoto()" role="dialog">
+<button aria-label="Fechar" class="close-modal" onclick="closePhoto()">×</button>
+<img alt="Foto ampliada" id="modalImage" onclick="event.stopPropagation()"/>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
